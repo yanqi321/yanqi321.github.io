@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>网上报名</title>
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/layout.css">
+	<link rel="stylesheet" href="css/message.css">
+	 <style type="text/css">
+        *{margin:0; padding:0;}
+       .right_liuyan{margin-left: 10px;margin-top: 30px}
+       .right_liuyan input{font-size:14px; line-height:24px; color:#333; font-family: Arial, Helvetica, Tahoma;}
+       .right_liuyan h1{margin-bottom:15px; height:100px;width: 960px; line-height:100px; text-align:center; font-size:24px; color:#fff; background:#0051a1;}
+       .right_liuyan #content #post,#comment p{zoom:1;}
+       .right_liuyan #content #post:after,#comment p:after{display:block; height:0; clear:both; visibility:hidden; overflow:hidden; content:'.';}
+       .right_liuyan #content{margin:0 auto; width:960px; overflow:hidden;}
+       .right_liuyan #content #post{margin-bottom:15px; padding-bottom:15px; border-bottom:1px #d4d4d4 dashed;}
+       .right_liuyan #content #post textarea{display:block; margin-bottom:10px; padding:5px; width:948px; height:200px; border:1px #d1d1d1 solid; border-radius:5px; resize:none; outline:none;}
+       .right_liuyan #content #post textarea:hover{border:1px #9bdf70 solid; background:#f0fbeb;}
+       .right_liuyan #content #post #postBt{margin-left:5px; padding:3px; float:right;}
+       .right_liuyan #comment{overflow:hidden;}
+       .right_liuyan #comment p{margin-bottom:10px; padding:10px; border-radius:5px;}
+       .right_liuyan #comment p:nth-child(odd){border:1px solid #e3e197; background:#ffd;}
+       .right_liuyan #comment p:nth-child(even){border:1px solid #adcd3c; background:#f2fddb;}
+       .right_liuyan #comment p span{display:inline; float:right;}
+       .right_liuyan #comment p .msg{width:738px;float: left;}
+       .right_liuyan #comment p .datetime{width:200px; color:#999; text-align:right;}
+       .right_liuyan  .liuyan_roll{width: 960px;height: 400px;overflow-y:scroll; overflow-x:scroll;margin-top: 30px;background-color: #eee;}
+        </style>
+</head>
+<body>
+	<script type="text/javascript">
+        var Storage ={
+        	setCookie:function(name,value,time){
+        		var odate=new Date();
+				odate.setDate(odate.getDate()+time);
+				document.cookie=name+'='+value+';expires='+odate;
+        	},
+        	getCookie:function(name){
+        		var arr1=document.cookie.split(';');
+				for(var i=0;i<arr1.length;i++){
+					arr2=arr1[i].trim().split('=');
+					if(arr2[0]==name){
+						return arr2[1];
+					}
+				}
+				return '';
+        	},
+            saveData:function(){
+            	var data=document.getElementById("texts");
+                // var data = document.querySelector("#post textarea");
+                if(data.value != ""){
+                    // var time = new Date().getTime() + Math.random() * 5;
+                    var myData=data.value+","+this.getDateTime();
+                    this.setCookie("oldData",myData);
+                    // localStorage.setItem(time, data.value + "|" + this.getDateTime());
+                    // data.value = "";
+                    this.writeData(myData);
+                    data.value="";
+                }
+                else  {
+                	alert("请填写您的留言！");
+                }
+            },
+            writeData:function(datas){
+            	var data=datas.split(',');
+            	var dataHtml=document.getElementById("comment").innerHTML;
+            	if(data!=null){
+                    dataHtml = "<p><span class='msg'>" + data[0]+ "</span><span class='datetime'>" + data[1] + "</span></p>"+dataHtml;
+            	}
+                document.getElementById("comment").innerHTML = dataHtml;
+            },
+            getDateTime:function(){
+                var isZero = function(num){
+                    if(num < 10){
+                        num = "0" + num;
+                    }
+                    return num;
+                }
+                var d = new Date();
+                return d.getFullYear() + "-" + isZero(d.getMonth() + 1) + "-" + isZero(d.getDate()) + " " + isZero(d.getHours()) + ":" + isZero(d.getMinutes()) + ":" + isZero(d.getSeconds());
+            }            
+        }
+        window.onload = function(){
+        	var oldData=Storage.getCookie("oldData");
+        	if(oldData){
+        		Storage.writeData(oldData);
+        	}
+            document.getElementById("postBt").onclick = function(){Storage.saveData();}
+        }
+        </script>
+	<div id="top">		
+			<div class="w_1000">
+				<div class="inner">
+					<div class="block_01">
+					<div class="login">
+						<a href="center.html">学员通道</a>
+						<img src="img/li_bg1.png">
+						<a href="login.html">会员登陆</a>
+						<img src="img/li_bg1.png">
+						<a href="register.html">会员注册</a>
+						<img src="img/li_bg1.png">
+					</div>
+				</div>
+				</div>
+			</div>
+			<div class="banner">
+				<div class="inner">
+					<div class="logo">
+						<a href="index.html">
+							<img src="img/logo1.png">
+						</a>
+					</div>
+					<div class="s_t">
+						<div class="search">
+							<form action="" method="" name="f1">
+								<input type="submit" value class="input_1">
+								<input type="text" value="输入您所要搜寻的关键字" class="input_2" name="user">
+								<input type="submit" value="搜&nbsp索" class="input_3">
+							</form>
+						</div>
+						<div class="tel">
+							<div class="tel_1">
+								<p>报名热线</p>
+								<p class="tel_2">18330392656</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>		
+	</div>
+	<div class="nav">
+		<div class="inner">
+			<ul>
+				<li ><a href="index.html">网站首页</a></li>
+				<li><a href="message.html">走进国运</a></li>
+				<li><a href="news.html">新闻中心</a></li>
+				<li><a href="xueche.html">学车指南</a></li>
+				<li><a href="chexin.html">车型费用</a></li>
+				<li><a href="baoming.html">网上报名</a></li>
+				<li><a href="center.html" class="select">学员中心</a></li>
+			</ul>
+		</div>
+	</div>
+	<!-- 头部 -->
+	<div class="container clearfix">
+		<div class="left_area">
+			<div class="touxiang">
+				<img src="img/user_l.jpg" alt="">
+				<div class="icon_l">
+					<p>王国运</p>
+				</div>
+			</div>
+			<div class="title">学员中心</div>
+			<ul class="left_list">
+				<li><a href="center.html">&gt; 个人信息</a></li>
+				<li><a href="jingdu.html">&gt; 学车进度</a></li>
+				
+				<li class="active"><a href="liuyan.html">&gt; 投诉建议</a></li>
+			</ul>
+			<ul class="s_center">
+				<li><a href="center.html">
+					学员中心<p>STUDENT CENTER</p>
+				</a></li>
+				<li><a href="baoming.html">
+					报名中心
+						<p>REGISTRATION CENTER</p>
+					</a></li>
+			</ul>
+		</div>
+		<div class="right_area">
+         <div class="title clearfix">
+				<h2>留言板</h2>
+				<span>当前位置：首页>>留言板</span>
+			</div>
+		<div class="right_liuyan">
+			<h1>留言板</h1>
+        <div id="content">
+            <div id="post">
+                <textarea class="transition" id="texts"></textarea>
+                <input id="postBt" type="button" value="发表评论"/>
+            </div>
+            <div class="liuyan_roll">
+            <div id="comment"></div>	
+            </div>
+        </div>
+		</div>
+	</div>
+     </div>
+	<footer>
+		<div class="contact">
+			<ul class="clearfix mess">
+				<li>
+					<h3>用户须知</h3>
+					<ul>
+						<li><a href="message.html">关于国运</a></li>
+						<li><a href="baoming.html">我要约考</a></li>
+						<li><a href="chexin.html">班型介绍</a></li>
+					</ul>
+				</li>
+				<li>
+					<h3>联系方式</h3>
+					<p>报名电话：86-18633505059</p>
+					<p>报名地址：秦皇岛市海港区 抚宁区 北戴河区 (以上三区均有练车场，根据学员个人情况而分配；燕大附近有为学生专门安排的练车场)</p>
+				</li>
+				<li><h3>关注我们</h3><img src="img/weixin.jpg" alt=""></li>
+			</ul>
+
+		</div>
+		<p>Copy Right©河北国运机动车驾驶员培训有限公司 All Rights Reserve 冀ICP备14002527号</p>
+	</footer>
+</body>
+</html>

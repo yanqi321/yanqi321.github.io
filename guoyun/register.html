@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>注册</title>
+	<script src="js/jquery-1.12.3.min.js"></script>
+	<style type="text/css">
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		#top{
+			height: 142px;		
+		}		
+		.w_1000 {
+			background-color: #bc1b20;
+			height: 26px;			
+		}
+		.inner{
+			width: 1000px;
+			margin: 0 auto;
+		}
+		.block_01{
+			line-height: 26px;
+			float: right;
+		}
+		.login .dl{
+			font-weight: bold;
+			color: black;
+		}
+		
+		.login{
+			width: 293px;
+			height: 26px;
+			font-family: "宋体";			
+			text-align: right;
+			font-size: 12px;
+			float: left;
+			
+		}
+		.login a{
+			color: #FFF;
+			text-decoration: none;
+		}
+		.banner{
+			height: 116px;
+			background-color: #ffeab5;
+		}
+		.logo{
+			width: 252px;
+			height: 80px;
+			padding-top: 16px;
+			float: left;
+		}
+		.logo img{
+			width: 200px;
+			height: 80px;
+		}
+		.s_t{
+			width: 559px;
+			height: 50px;			
+			float: right;
+			padding-top: 35px;			
+		}
+		.search{
+			width: 314px;
+			height: 30px;
+			border: 1px solid #ededed;
+    		margin-top: 8px;	
+    		float: left;		
+		}
+		.input_1{
+			width: 35px;
+			height: 30px;
+			background:url(img/input_1.png) center center no-repeat;
+			float: left;
+			background-color: #fff;	
+			border: 0		
+		}
+		.input_2{
+			width: 220px;
+			height: 30px;
+			float: left;
+			color: #e3e3e3;
+   			outline: medium;
+   			border: 0
+		}
+		.input_3{
+			width: 59px;
+      		height: 30px;
+   			border: none;
+    		border: 0px;
+    		font-family: "微软雅黑";
+    		font-size: 14px;
+    		color: #fff;
+    		cursor: pointer;
+    		background-color: red;
+    		float: left;    		
+		}
+		.tel{
+			width: 212px;
+			height: 50px;
+			background: url(img/tel.png) no-repeat;
+			float: left;
+			margin-left: 31px;
+		}
+		.tel_1{
+			width: 155px;
+			height: 50px;
+			float: left;			
+			padding-left: 49px;
+		}
+		.tel_2{
+			font-size: 30px;
+		}
+		.nav{
+			height: 45px;
+			background-color: #c01619;
+		}
+		.nav ul{
+			width: 1000px;
+			height: 45px;
+		}
+		.nav  li {
+			float: left;
+    		width: 116px;
+    		margin-right: 22px;
+    		position: relative;
+    		z-index: 9;
+    		list-style:none;
+    		height: 45px;
+    		line-height: 45px;    		
+    		text-align: center;
+		}
+		.nav li a{
+			text-decoration: none;
+			color: #fff;
+			display: block;
+		}
+		.nav ul .select{
+			background-color: #fff;
+			color: red;
+			border-top: 3px solid yellow;
+			height: 42px;
+		}
+		.nav ul li a:hover{
+			background-color: #fff;
+			color: red;
+			border-top: 3px solid yellow;
+			height: 42px;
+		}
+		.box{
+			height: 618px;
+			position: relative;
+			background: #fec11b url(img/注册bg.png) no-repeat 10px 50px;
+		}
+		.box_1{
+			width: 370px;
+			height: 500px;			
+			background-color: white;
+			position: absolute;
+			top:50px;
+			right: 80px;						
+		}
+		.box_1 .inner{
+			width: 300px;
+			height: 500px;
+			margin: 0 auto;	
+			overflow: hidden;		
+		}
+		.box_1 h3{
+			width: 120px;
+    		height: 30px;
+    		border-bottom: 2px solid #2F82CF;
+    		font-size: 20px;
+    		color: #333;
+			float: left;
+    		margin-top: 45px;
+		}
+		.box_1 .p_1{
+			width: 180px;
+    		height: 30px;
+    		border-bottom: 2px solid #D9D9D9;
+    		font-size: 14px;
+    		text-align: right;
+    		float: left;
+    		margin-top: 45px;
+		}
+		.box_1 .p_1 a{
+			text-decoration: none;
+			color: blue;
+			margin-bottom: 15px;
+		}
+		.form_1{
+			width: 300px;
+			height: 37px;			
+			
+		}
+		.tet_1{
+			width: 290px;
+			height: 30px;
+			margin-top: 15px;
+			color: #787878;
+    		font-size: 12px;    		
+		}
+		.p_2{
+			font-size: 14px;
+    		color: #666;
+    		margin-bottom: 20px;
+		}
+		.radio_1{
+			width: 13px;
+			height: 13px;
+			float: left;
+			margin-top: 2px;
+		}
+		 .a_1{
+			text-decoration: none;
+			color: blue;
+			margin-bottom: 20px;
+			display: block;
+			float: left;
+		}	
+		.sub{
+			width: 300px;
+    		height: 50px;
+    		background-color: #2F82CF;
+    		line-height: 50px;
+    		font-size: 20px;
+    		color: #fff;
+    		border:none;
+    		letter-spacing: 10px;
+		}
+	</style>
+</head>
+<body>
+	<div id="top">		
+			<div class="w_1000">
+				<div class="inner">
+					<div class="block_01">
+					
+					<div class="login">
+						
+						<a href="login.html" >会员登陆</a>
+						<img src="img/li_bg1.png">
+						<a href="register.html" class="dl">会员注册</a>
+						<img src="img/li_bg1.png">
+					</div>
+				</div>
+				</div>
+			</div>
+			<div class="banner">
+				<div class="inner">
+					<div class="logo">
+						<a href="index.html">
+							<img src="img/logo1.png">
+						</a>
+					</div>
+					<div class="s_t">
+						<div class="search">
+							<form action="" method="" name="f1">
+								<input type="submit" value class="input_1">
+								<input type="text" placeholder="输入您所要搜寻的关键字" class="input_2" name="user">
+								<input type="submit" value="搜&nbsp索" class="input_3">
+							</form>
+						</div>
+						<div class="tel">
+							<div class="tel_1">
+								<p>报名热线</p>
+								<p class="tel_2">18330392656</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>		
+	</div>
+	<div class="nav">
+		<div class="inner">
+			<ul>
+				<li ><a href="index.html" class="select">网站首页</a></li>
+				<li><a href="message.html">走进国运</a></li>
+				<li><a href="gonggao.html">新闻中心</a></li>
+				<li><a href="xueche.html">学车指南</a></li>
+				<li><a href="chexin.html">学车费用</a></li>
+				<li><a href="baoming.html">网上报名</a></li>
+				<li><a href="center.html">学员中心</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="box">
+		<div class="box_1">
+			<div class="inner">
+				<h3>会员注册</h3>
+				<p class="p_1"><a href="login.html">去登陆</a></p>
+				<form class="form_1" name="f2">
+					<input class="tet_1" type="text" placeholder="手机号" name="userr">
+					<input class="tet_1" type="text" placeholder="昵称" name="userr">
+					<input class="tet_1" type="password"  name="unpass" placeholder="密码">
+					<input class="tet_1" type="password"  name="unpass" placeholder="确认密码">
+					<br><br><br>
+					<hr>
+					<br>
+					<input type="checkbox" class="radio_1">我已同意并阅读<a href="" class="a_1">《用户注册协议》</a>
+					<br>
+					<input type="submit" value="注册" class="sub">
+				</form>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript">
+				
+	</script>
+</body>
+</html>

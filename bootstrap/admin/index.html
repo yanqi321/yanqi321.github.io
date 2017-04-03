@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1 , user-scalable=no">
+    <title>admin</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/animate.css">
+    <link rel="stylesheet" type="text/css" href="../css/admin.css">
+</head>
+
+<body>
+    <!-- 导航 -->
+    <nav class="navbar navbar-default navbar-static-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a href="#" class="navbar-brand">YanQi</a>
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                   <li class="active"><a href="index.html"><span class="glyphicon glyphicon-home"></span> 后台首页</a></li>
+                    <li><a href="user_list.html"><span class="glyphicon glyphicon-user"></span> 用户管理</a></li>
+                    <li><a href="content.html"><span class="glyphicon glyphicon-list-alt"></span> 内容管理</a></li>
+                    <li><a href="tag.html"><span class="glyphicon glyphicon-tag"></span> 标签管理</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="dropdown">
+                        <a type="button" data-toggle="dropdown" style="cursor: pointer;">Admin <span class="caret"></span></a>
+                        <ul class="dropdown-menu dropdown-menu-right">
+                            <li><a href="../index.html"><span class="glyphicon glyphicon-screenshot"></span> 前台首页</a></li>
+                            <li><a href=""><span class="glyphicon glyphicon-user"></span> 个人主页</a></li>
+                            <li><a href=""><span class="glyphicon glyphicon-cog"></span> 个人设置</a></li>
+                            <li><a href=""><span class="glyphicon glyphicon-credit-card"></span> 账户中心</a></li>
+                            <li><a href=""><span class="glyphicon glyphicon-heart"></span> 我的收藏</a></li>
+                        </ul>
+                    </li>
+                    <li><a href=""><span class="glyphicon glyphicon-off"></span> 退出</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- 内容部分 -->
+    <div class="container">
+        <div class="row">
+            <!-- alert -->
+            <div class="col-md-12">
+                <div class="alert alert-danger alert-dismissible" role="alert">
+                    <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4>网站程序有漏洞，急需修复！</h4>
+                    <p>当前版本程序(V1.22)存在严重安全问题，容易造成攻击，请即可修复！</p>
+                    <button class="btn btn-danger">立即修复</button>
+                    <button class="btn btn-default" data-dismiss='alert'>稍后处理</button>
+                </div>
+            </div>
+            <!-- second -->
+            <div class="col-md-6">
+                <div class="panel panel-default">
+                    <div class="panel-heading">网站数据统计</div>
+                    <div class="panel-body">
+                        <table class="table table-hover">
+                            <thead>
+                                <th>统计项目</th>
+                                <th>今日</th>
+                                <th>昨日</th>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">注册会员</th>
+                                    <td>200</td>
+                                    <td>300</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">登录会员</th>
+                                    <td>3002</td>
+                                    <td>3500</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">今日发帖</th>
+                                    <td>200</td>
+                                    <td>240</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">转载次数</th>
+                                    <td>102</td>
+                                    <td>121</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="panel panel-default">
+                    <div class="panel-heading">网站热帖</div>
+                    <ul class="list-group">
+                        <li class="list-group-item"><a href=""><span class="glyphicon glyphicon-list-alt"></span> 泛Mooc职业教育， 效果和就业为王<small class="pull-right">2017-01-24</small></a></li>
+                        <li class="list-group-item"><a href=""><span class="glyphicon glyphicon-list-alt"></span> 泛Mooc职业教育， 效果和就业为王<small class="pull-right">2017-01-24</small></a></li>
+                        <li class="list-group-item"><a href=""><span class="glyphicon glyphicon-list-alt"></span> 泛Mooc职业教育， 效果和就业为王<small class="pull-right">2017-01-24</small></a></li>
+                        <li class="list-group-item"><a href=""><span class="glyphicon glyphicon-list-alt"></span> 泛Mooc职业教育， 效果和就业为王<small class="pull-right">2017-01-24</small></a></li>
+                        <li class="list-group-item"><a href=""><span class="glyphicon glyphicon-list-alt"></span> 泛Mooc职业教育， 效果和就业为王<small class="pull-right">2017-01-24</small></a></li>
+                        <li class="list-group-item"><a href=""><span class="glyphicon glyphicon-list-alt"></span> 泛Mooc职业教育， 效果和就业为王<small class="pull-right">2017-01-24</small></a></li>
+                    </ul>
+                </div>
+            </div>
+            <!-- chart -->
+            <div class="col-md-6">
+                <div class="panel panel-default">
+                    <div class="panel-heading">今日访客统计</div>
+                    <div class="panel-body">
+                        <canvas id='canvas' class="col-md-12"></canvas>
+                    </div>
+                </div>
+            </div>
+            <!-- progress -->
+            <div class="col-md-6">
+                <div class="panel panel-default">
+                    <div class="panel-heading">服务器状态</div>
+                    <div class="panel-body">
+                        <p>内存使用率：40%</p>
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-success progress-bar-striped" role="progressbar" style="width: 40%">
+                                <span class="sr-only">40% Complete (success)</span>
+                            </div>
+                        </div>
+                        <p>数据库使用率：20%</p>
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-info progress-bar-striped" role="progressbar" style="width: 20%">
+                                <span class="sr-only">20% Complete</span>
+                            </div>
+                        </div>
+                        <p>磁盘使用率：60%</p>
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-warning progress-bar-striped" role="progressbar" style="width: 60%">
+                                <span class="sr-only">60% Complete (warning)</span>
+                            </div>
+                        </div>
+                        <p>CPU使用率：80%</p>
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-danger progress-bar-striped active" role="progressbar" style="width: 80%">
+                                <span class="sr-only">80% Complete (danger)</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+			<!-- 团队留言板 -->
+			<div class="col-md-12">
+				<div class="panel panel-default">
+					<div class="panel-heading">团队留言板</div>
+					<div class="panel-body">
+						<div class="col-md-7">
+							<div class="media well">
+							  <div class="media-left media-middle">
+							    <a href="#">
+							      <img class="media-object wh64" src="../img/a.png" alt="Android">
+							    </a>
+							  </div>
+							  <div class="media-body">
+							    <h4 class="media-heading">卓大哥</h4>
+							    技术大哥，今晚请把网站程序升级一下哈，现在的系统有漏洞，安全起见！
+							  </div>
+							</div>
+							<div class="media well">
+								<div class="media-body text-right">
+									<h4>技术大神</h4>
+									收到，今晚凌晨2点准时升级！
+								</div>
+								<div class="media-right">
+									<a href="#">
+										<img src="../img/i.png" alt="iPhone" class="media-object wh64">
+									</a>
+								</div>
+							</div>
+							<div class="media well">
+								<div class="media-body text-right">
+									<h4>技术大神</h4>
+									你先在站点发布一下通知哈！
+								</div>
+								<div class="media-right">
+									<a href="#">
+										<img src="../img/i.png" alt="iPhone" class="media-object wh64">
+									</a>
+								</div>
+							</div>
+							<div class="media well">
+							  <div class="media-left media-middle">
+							    <a href="#">
+							      <img class="media-object wh64" src="../img/a.png" alt="Android">
+							    </a>
+							  </div>
+							  <div class="media-body">
+							    <h4 class="media-heading">卓大哥</h4>
+							    好嘞。
+							  </div>
+							</div>
+						</div>
+						<div class="col-md-5">
+							<form action="#">
+								<div class="form-group">
+									<label for="text_area">输入留言内容</label>
+									<textarea class="form-control" id="text_area" rows="5" placeholder="请输入留言内容"></textarea>
+									<button type="submit" class="btn btn-default">提交</button>
+								</div>
+							</form>
+							<div class="panel panel-default">
+                            <div class="panel-heading">团队联系手册</div>
+                            <div class="panel-body">
+                                <ul class="list-group">
+                                    <li class="list-group-item">站长(李小龙)：<span class="glyphicon glyphicon-phone"></span>&nbsp;&nbsp;13134848615</li>
+                                    <li class="list-group-item">技术(大牛哥)：<span class="glyphicon glyphicon-phone"></span>&nbsp;&nbsp;13456127694</li>
+                                    <li class="list-group-item">推广(张二哥)：<span class="glyphicon glyphicon-phone"></span>&nbsp;&nbsp;13457815482</li>
+                                    <li class="list-group-item">客服(王女士)：<span class="glyphicon glyphicon-phone"></span>&nbsp;&nbsp;13134567782&nbsp;&nbsp;<span class="glyphicon glyphicon-phone-alt"></span>&nbsp;&nbsp;028-888888</li>
+                                </ul>
+                            </div>
+                        </div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+        </div>
+    </div>
+    <!-- footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <p>Copyright © 2012-2015 www.maiziedu.com 蜀ICP备13014270号-4</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="../js/jquery-1.12.3.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/Chart.js"></script>
+    <script>
+    $(function() {
+        var chartData = {
+            //X坐标数据
+            labels: ["周一", "周二", "周三", "周四", "周五", "周六", "周末"],
+            datasets: [{
+                //统计表的背景颜色
+                fillColor: "rgba(0,0,255,0.5)",
+                //统计表画笔颜色
+                strokeColor: "#f60",
+                //点的颜色
+                pointColor: "#000;",
+                //点边框的颜色
+                pointStrokeColor: "red",
+                //鼠标触发时点的颜色
+                pointHighlightFill: "red",
+                //鼠标触发时点边框的颜色
+                pointHighlightStroke: "#000",
+                //Y坐标数据
+                data: [300, 555, 655, 714, 899, 905, 1000]
+            }, {
+                fillColor: "rgba(0,255,0,0.5)",
+                strokeColor: "rgba(92, 184, 92, 1)",
+                pointColor: "rgba(23, 126, 23, 1)",
+                pointStrokeColor: "#fff",
+                pointHighlightFill: "#fff",
+                pointHighlightStroke: "rgba(151,187,205,1)",
+                data: [314, 455, 755, 814, 999, 905, 1000]
+            }, {
+                fillColor: "rgba(255,0,0,0.5)",
+                strokeColor: "blue",
+                pointColor: "rgba(23, 126, 23, 1)",
+                pointStrokeColor: "#fff",
+                pointHighlightFill: "#fff",
+                pointHighlightStroke: "rgba(151,187,205,1)",
+                data: [114, 255, 455, 414, 599, 605, 500]
+            }]
+        }
+        var ctx = $("#canvas").get(0).getContext("2d");
+        window.myLine = new Chart(ctx).Line(chartData, {
+            responsive: true
+        });
+    })
+    </script>
+</body>
+
+</html>

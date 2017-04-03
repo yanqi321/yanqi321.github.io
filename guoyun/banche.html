@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>驾校信息</title>
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/layout.css">
+	<link rel="stylesheet" href="css/message.css">
+	<style>
+		#allmap{
+			width: 700px;
+			height: 400px;
+		}
+	</style>
+</head>
+<body>
+	<div id="top">		
+			<div class="w_1000">
+				<div class="inner">
+					<div class="block_01">
+					<div class="login">
+						<a href="center.html">学员通道</a>
+						<img src="img/li_bg1.png">
+						<a href="login.html">会员登陆</a>
+						<img src="img/li_bg1.png">
+						<a href="register.html">会员注册</a>
+						<img src="img/li_bg1.png">
+					</div>
+				</div>
+				</div>
+			</div>
+			<div class="banner">
+				<div class="inner">
+					<div class="logo">
+						<a href="index.html">
+							<img src="img/logo1.png">
+						</a>
+					</div>
+					<div class="s_t">
+						<div class="search">
+							<form action="" method="" name="f1">
+								<input type="submit" value class="input_1">
+								<input type="text" value="输入您所要搜寻的关键字" class="input_2" name="user">
+								<input type="submit" value="搜&nbsp索" class="input_3">
+							</form>
+						</div>
+						<div class="tel">
+							<div class="tel_1">
+								<p>报名热线</p>
+								<p class="tel_2">18330392656</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>		
+	</div>
+	<div class="nav">
+		<div class="inner">
+			<ul>
+				<li ><a href="index.html">网站首页</a></li>
+				<li><a href="message.html" class="select">走进国运</a></li>
+				<li><a href="gonggao.html">新闻中心</a></li>
+				<li><a href="xueche.html">学车指南</a></li>
+				<li><a href="chexin.html">学车费用</a></li>
+				<li><a href="baoming.html">网上报名</a></li>
+				<li><a href="center.html">学员中心</a></li>
+			</ul>
+		</div>
+	</div>
+	<!-- 头部 -->
+	<div class="container clearfix">
+		<div class="left_area">
+			<div class="title">走进国运</div>
+			<ul class="left_list">
+				<li ><a href="message.html">&gt; 国运简介</a></li>
+				<li class="active"><a href="banche.html">&gt; 班车路线</a></li>
+				
+			</ul>
+			<ul class="s_center">
+				<li><a href="center.html">
+					学员中心<p>STUDENT CENTER</p>
+				</a></li>
+				<li><a href="baoming.html">
+					报名中心
+						<p>REGISTRATION CENTER</p>
+					</a></li>
+			</ul>
+			<div class="p_number">
+				<h4>报名热线</h4>
+				<p>010-34893849</p>
+			</div>
+		</div>
+		<div class="right_area">
+			<div class="title clearfix">
+				<h2>驾校简介</h2>
+				<span>当前位置：首页>>驾校简介</span>
+			</div>
+			<div class="article">
+				<div id="allmap"></div>
+			</div>
+		</div>
+	</div>
+	<footer>
+		<div class="contact">
+			<ul class="clearfix mess">
+				<li>
+					<h3>用户须知</h3>
+					<ul>
+						<li><a href="message.html">关于国运</a></li>
+						<li><a href="baoming.html">我要约考</a></li>
+						<li><a href="chexin.html">班型介绍</a></li>
+					</ul>
+				</li>
+				<li>
+					<h3>联系方式</h3>
+					<p>报名电话：86-18633505059</p>
+					<p>报名地址：秦皇岛市海港区 抚宁区 北戴河区 (以上三区均有练车场，根据学员个人情况而分配；燕大附近有为学生专门安排的练车场)</p>
+				</li>
+				<li><h3>关注我们</h3><img src="img/weixin.jpg" alt=""></li>
+			</ul>
+
+		</div>
+		<p>Copy Right©河北国运机动车驾驶员培训有限公司 All Rights Reserve 冀ICP备14002527号</p>
+	</footer>
+	<script type="text/javascript"
+src="http://api.map.baidu.com/api?v=2.0&ak=ED2d59e127427eba231c96ba1b49af84"></script>
+</body>
+</html>
+<script type="text/javascript">
+// 百度地图API功能
+var map = new BMap.Map("allmap");
+var point = new BMap.Point(119.546093, 39.913395);
+map.centerAndZoom(point, 11);
+map.enableScrollWheelZoom(true);
+map.addEventListener("click", function(e){
+alert('经度:'+e.point.lng+' , 纬度: '+e.point.lat);
+var now_point =  new BMap.Point(e.point.lng, e.point.lat );
+marker.setPosition(now_point);//设置覆盖物位置
+});
+var marker = new BMap.Marker(point); //创建marker对象
+marker.enableDragging(); //marker可拖拽
+//拖拽结束事件
+marker.addEventListener("dragend", function(e){
+//获取覆盖物位置
+var o_Point_now =  marker.getPosition();
+var lng = o_Point_now.lng;
+var lat = o_Point_now.lat;
+//e.point.lng 地理经度。
+// e.point.lat 地理纬度。
+//alert(e.point.lng + "---, " + e.point.lat);
+get_lng_lat();
+})
+map.addOverlay(marker); //在地图中添加marker
+get_lng_lat();
+//获取经纬度
+function get_lng_lat(){
+//返回覆盖物标注的地理坐标。
+var o_Point_now =  marker.getPosition();
+var lng = o_Point_now.lng;
+var lat = o_Point_now.lat;
+//alert('经度:'+lng+' , 纬度: '+lat);
+}
+</script>

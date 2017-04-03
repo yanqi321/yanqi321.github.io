@@ -1,0 +1,202 @@
+	body{
+	font-family: '微软雅黑';
+}
+.navbar-default{
+	/*height: 70px;  不能设置高度，会使导航失效*/
+	background: #fff;
+	border: none;
+	color: #666;
+	box-shadow: 0px 2px 8px 0px rgba(50,50,50,0.25);
+}
+/*.container{
+	width: 1170px;
+}*/
+.navbar-default .navbar-brand{
+	height: 70px;
+	line-height: 35px;
+	font-size: 30px;
+	color: #40D2B1;
+}
+.navbar-toggle{
+	margin-top: 17px;
+
+}
+/*.navbar-default .collapse{
+	background: #fff;
+}*/
+.navbar-default .navbar-toggle:hover{
+	background-color: #40D2B1;
+}
+.navbar-default .navbar-toggle:hover .icon-bar{
+	background: #fff;
+}
+.navbar-default .navbar-toggle .icon-bar{
+	background-color: #2ED0AB;
+}
+.navbar-default .nav a{
+	height: 70px;
+	line-height: 35px;
+	font-size: 18px;
+	font-weight: bold;
+}
+#home{
+	background: url(../img/home-bg.jpg);
+	background-size: cover;
+	margin-top: 70px;
+	text-align: center;
+	color: #fff;
+}
+.lvjing{
+	width: 100%;
+	height: 100%;
+	padding: 90px 0;
+	background: rgba(0,0,0,0.7);
+}
+#home .row{
+	text-align: center;
+}
+#home h1{
+	font-weight: bold;
+	margin-bottom: 35px;
+}
+p{
+	line-height: 35px;
+}
+.col-md-6{
+	vertical-align: middle;
+}
+#home img{
+	display: inline-block;
+	padding-top: 30px;
+}
+#bbs{
+	padding: 80px 0;
+	text-align: center;
+}
+#bbs a{
+	color: #999;
+	display: block;
+	text-decoration: none;
+}
+#bbs .col-md-4{
+    padding: 15px;
+}
+#bbs .col-md-4:hover{
+    background: #f1f1f1;
+    box-shadow: 1px 1px 4px #ccc;
+}
+#bbs a img{
+	display: inline-block;
+}
+#html5{
+	padding: 80px 0;
+}
+#html5 p{
+	line-height: 25px;
+}
+.my-icon{
+	display: inline-block;
+	border-radius: 50%;
+	background-color: rgb(64, 210, 177);
+	width: 40px;
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+	color: #fff;
+	font-size: 20px;
+	margin-right: 20px;
+}
+.col-r{
+	text-align: center;
+}
+#html5 img{
+	display: inline-block;
+}
+#html5 p{
+	line-height: 25px;
+}
+#bootstrap{
+	padding: 80px 0;
+}
+#bootstrap img{
+	display: inline-block;
+}
+#bootstrap p{
+	line-height: 25px;
+}
+#course{
+	background: #f8f8f8;
+    padding: 80px 0;
+    text-align: center;
+}
+#course .col-md-3{
+	margin-bottom: 20px;
+}
+#course .col-md-3 .course{
+	background: #fff;
+}
+.course img{
+	margin: 0 auto;
+}
+#course h1{
+	padding-bottom: 50px;
+}
+#course .btn{
+	background-color: transparent;
+	border: 1px solid #40D2B1;
+	border-radius: 0;
+	padding: 8px 20px;
+	color: #40D2B1;
+	margin:  20px;
+}
+#course .btn:hover{
+	background: #40D2B1;
+	color: #fff;
+}
+#app{
+	padding: 80px 0;
+}
+#app h2{
+	font-weight: bold;
+	padding-bottom: 30px;
+}
+#app .btn{
+	margin: 10px 0;
+	border-radius: 0;
+	padding: 6px 30px;
+	background-color: rgb(64, 210, 177);
+	border-color: rgb(64, 210, 177);
+}
+#contact{
+	background: url(../img/contact-bg.png);
+	color: #fff;
+}
+#contact h2{
+	font-weight: bold;
+}
+#contact p{
+	line-height: 25px;
+	margin-bottom: 20px;
+}
+#contact .form-control{
+	border: none;
+	border-radius: 0;
+	height: 50px;
+	margin-bottom: 20px;
+}
+#contact textarea.form-control {
+    height: auto;
+    resize: none;
+}
+#contact button.form-control{
+	background: #40D2B1;
+	color: #fff;
+}
+#contact button.form-control:hover{
+	background: rgb(44, 142, 120);
+}
+footer{
+	text-align: center;
+	padding: 20px;
+	font-weight: 400;
+}

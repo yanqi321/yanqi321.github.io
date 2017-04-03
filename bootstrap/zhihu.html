@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta name='viewport' charset="utf-8" content="width=device-width,initial-scale=1">
+	<title>zhihu.html</title>
+	 <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="http://apps.bdimg.com/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+	<style>
+		body{
+			padding-top: 50px;
+		}
+		.headers{
+			background: linear-gradient(to bottom,#086ed5,#055db5);
+		}
+		.nav-c{
+			max-width: 960px;
+			padding: 0;
+		}
+		.navbar-brand{
+			color: #fff !important;
+			font-size: 28px;
+		}
+		.nav-c ul a{
+			color: #fff !important;
+		}
+		.input-group{
+			border-radius: 2px;
+		}
+		.input-group-addon{
+			background: linear-gradient(to bottom,#0e7bef,#0d73da);
+			border: none;
+		}
+		.input-group-addon span{
+			color: #fff;
+			font-size: 15px;
+		}
+		.asks{
+			background: linear-gradient(to bottom,#0e7bef,#0d73da);
+		}
+	</style>
+</head>
+<body>
+	<div class="navbar headers navbar-default navbar-fixed-top">
+		<div class="container nav-c">
+			<div class="navbar-head">
+				<a href="#" class='navbar-brand'>知乎</a>
+			</div>
+			<div class="navbar-form navbar-left">
+				<div class="input-group">
+					<input type="text" class="form-control" style="width:320px" placeholder="搜索你感兴趣的内容...">
+					<span class="input-group-addon">
+						<a href="#" ><span class="glyphicon glyphicon-search"></span></a>
+					</span>
+				</div>
+			</div>
+			<ul class="nav navbar-nav navbar-left">
+				<li><a href="#">首页</a></li>
+				<li><a href="#">话题</a></li>
+				<li><a href="#">发现</a></li>
+			</ul>
+			<ul class="nav navbar-nav navbar-right">
+				<li><a href="#"><span class="glyphicon glyphicon-user"></span> 注册知乎</a></li>
+				<li><a href="#">登陆</a></li>
+			</ul>
+			<button class="btn asks btn-primary navbar-btn navbar-right">提问</button>
+		</div>
+	</div>
+</body>
+</html>

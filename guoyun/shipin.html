@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>驾校信息</title>
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/layout.css">
+	<link rel="stylesheet" href="css/message.css">
+</head>
+<style type="text/css">
+	.video_title{
+	margin-left: 300px;
+	margin-top: 30px;
+	font-size: 28px;
+}
+.video .gb_div{
+	width: 400px;
+	height: 350px;
+	text-align: center;
+	float: left;
+	margin-left: 20px;
+}
+.video .video_p{
+	color: #C01619;
+	font-size: 24px;
+	margin-left: 20px;
+	margin-top: 20px;
+}
+.video_gb{
+	 width: 900px;
+	 height: 700px;
+	 overflow-y:scroll; 
+	 overflow-x:scroll;
+	 margin-top: 30px;
+	 background-color: #eee;
+}
+/*.sider{
+	position: fixed;
+	top: 380px;
+	right: 50px;
+	z-index: 2;
+}
+.sider .r_qq{
+	background: url(../img/r_qq.png) 0px 0px no-repeat;
+    background-color: #6da9de;
+    text-decoration: none;
+}
+.sider .r_phone{
+	background: url(../img/r_phone.png) 0px 0px no-repeat;
+    background-color: #fbb01f;
+    overflow: visible;
+}
+.r_phone:hover .p_number{
+	display: block;
+}
+.r_phone .p_number{
+	background-color: #fbb01f;
+    position: absolute;
+    width: 160px;
+    left: -160px;
+    top: 0px;
+    line-height: 73px;
+    color: #FFF;
+    font-size: 18px;
+    text-align: center;
+    display: none;
+}*/
+/*.sider .btn_top{
+	background:url(../img/r_top.png) 0px 0px no-repeat;
+    background-color: #f0f1f2;
+    /*display: none;*/
+/*}
+.btn{
+	width: 72px;
+    height: 73px;
+    margin-bottom: 1px;
+    cursor: pointer;
+    display: block;
+    position: relative;
+}*/
+</style>
+<body>
+	<div id="top">		
+			<div class="w_1000">
+				<div class="inner">
+					<div class="block_01">
+					<div class="login">
+						<a href="center.html">学员通道</a>
+						<img src="img/li_bg1.png">
+						<a href="login.html">会员登陆</a>
+						<img src="img/li_bg1.png">
+						<a href="register.html">会员注册</a>
+						<img src="img/li_bg1.png">
+					</div>
+				</div>
+				</div>
+			</div>
+			<div class="banner">
+				<div class="inner">
+					<div class="logo">
+						<a href="index.html">
+							<img src="img/logo1.png">
+						</a>
+					</div>
+					<div class="s_t">
+						<div class="search">
+							<form action="" method="" name="f1">
+								<input type="submit" value class="input_1">
+								<input type="text" placeholder="输入您所要搜寻的关键字" class="input_2" name="user">
+								<input type="submit" value="搜&nbsp索" class="input_3">
+							</form>
+						</div>
+						<div class="tel">
+							<div class="tel_1">
+								<p>报名热线</p>
+								<p class="tel_2">18330392656</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>		
+	</div>
+	<div class="nav">
+		<div class="inner">
+			<ul>
+				<li ><a href="index.html">网站首页</a></li>
+				<li><a href="message.html">走进国运</a></li>
+				<li><a href="gonggao.html">新闻中心</a></li>
+				<li><a href="xueche.html" class="select">学车指南</a></li>
+				<li><a href="chexin.html">车型费用</a></li>
+				<li><a href="baoming.html">网上报名</a></li>
+				<li><a href="center.html">学员中心</a></li>
+			</ul>
+		</div>
+	</div>
+	<!-- 头部 -->
+	<div class="container clearfix">
+		<div class="left_area">
+			<div class="title">学车指南</div>
+			<ul class="left_list">
+				<li ><a href="xueche.html">&gt; 报名须知</a></li>
+				<li class="active"><a href="shipin.html">&gt; 驾驶技巧</a></li>
+				
+				<li><a href="question.html">&gt; 常见问题</a></li>
+			</ul>
+			<ul class="s_center">
+				<li><a href="center.html">
+					学员中心<p>STUDENT CENTER</p>
+				</a></li>
+				<li><a href="baoming.html">
+					报名中心
+						<p>REGISTRATION CENTER</p>
+					</a></li>
+			</ul>
+			<div class="p_number">
+				<h4>报名热线</h4>
+				<p>010-34893849</p>
+			</div>
+		</div>
+		<div class="right_area">
+			<div class="title clearfix">
+				<h2>学车指南</h2>
+				<span>当前位置：首页>>学车指南</span>
+			</div>
+			<div class="video">
+			<p class="video_title">考试项目示范视频</p>
+			<div class="video_gb">
+			<div class="gb_div">
+			<p class="video_p">定点坡起</p>
+			<video width="380" height="250" controls poster="img/c_1.png">
+            <source src="http://upload.video.mucang.cn/2016-06-02/9f1e58c67ba845219b64a539b55afc32.high.mp4" type="video/mp4">
+            </video>	
+			</div>
+			<div class="gb_div">
+			<p class="video_p">侧方位停车</p>
+			<video width="380" height="250" controls poster="img/c_2.png">
+            <source src="http://upload.video.mucang.cn/2016-06-02/553bacc52bb5417d9f8125180affaee9.high.mp4" type="video/mp4">
+            </video>	
+			</div>
+			<div class="gb_div">
+			<p class="video_p">直角转弯</p>
+			<video width="380" height="250" controls poster="img/c_3.png">
+            <source src="http://upload.video.mucang.cn/2016-06-02/5611ad6fbc3940b4996a151e74531e68.high.mp4" type="video/mp4">
+            </video>	
+			</div>
+			<div class="gb_div">
+			<p class="video_p">曲线行驶</p>
+			<video width="380" height="250" controls poster="img/c_4.png">
+            <source src="http://upload.video.mucang.cn/2016-06-02/34170ef47bcf485da9c98a4f8d4fa260.high.mp4" type="video/mp4">
+            </video>	
+			</div>
+			<div class="gb_div">
+			<p class="video_p">倒车入库</p>
+			<video width="380" height="250" controls poster="img/c_5.png">
+            <source src="http://upload.video.mucang.cn/2016-06-02/ad69d329763f4e3783419a769d630c71.high.mp4" type="video/mp4">
+            </video>	
+			</div>
+			</div>
+			
+			</div>
+			
+		</div>
+      </div>
+
+	<footer>
+		<div class="contact">
+			<ul class="clearfix mess">
+				<li>
+					<h3>用户须知</h3>
+					<ul>
+						<li><a href="message.html">关于国运</a></li>
+						<li><a href="baoming.html">我要约考</a></li>
+						<li><a href="chexin.html">班型介绍</a></li>
+					</ul>
+				</li>
+				<li>
+					<h3>联系方式</h3>
+					<p>报名电话：86-18633505059</p>
+					<p>报名地址：秦皇岛市海港区 抚宁区 北戴河区 (以上三区均有练车场，根据学员个人情况而分配；燕大附近有为学生专门安排的练车场)</p>
+				</li>
+				<li><h3>关注我们</h3><img src="img/weixin.jpg" alt=""></li>
+			</ul>
+
+		</div>
+		<p>Copy Right©河北国运机动车驾驶员培训有限公司 All Rights Reserve 冀ICP备14002527号</p>
+	</footer>
+<!-- 	<div class="sider">
+		<a class="r_qq btn"></a>
+		<div class="r_phone btn"><span class="p_number">86-18633505059</span></div>
+		<a class="btn_top btn"></a>	
+	</div> -->
+</body>
+</html>

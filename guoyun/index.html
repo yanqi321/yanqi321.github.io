@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>国运驾校</title>
+	<link rel="stylesheet" href="css/animate.css">
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/layout.css">
+	<link rel="stylesheet" href="css/css1.css">
+</head>
+<body>
+	<div id="top">		
+			<div class="w_1000">
+				<div class="inner">
+					<div class="block_01">
+					<div class="login">
+						<a href="center.html">学员通道</a>
+						<img src="img/li_bg1.png">
+						<a href="login.html">会员登陆</a>
+						<img src="img/li_bg1.png">
+						<a href="register.html">会员注册</a>
+						<img src="img/li_bg1.png">
+					</div>
+				</div>
+				</div>
+			</div>
+			<div class="banner">
+				<div class="inner">
+					<div class="logo">
+						<a href="index.html">
+							<img src="img/logo1.png">
+						</a>
+					</div>
+					<div class="s_t">
+						<div class="search">
+							<form action="" method="" name="f1">
+								<input type="submit" value class="input_1">
+								<input type="text" placeholder="输入您所要搜寻的关键字" class="input_2" name="user">
+								<input type="submit" value="搜&nbsp索" class="input_3">
+							</form>
+						</div>
+						<div class="tel">
+							<div class="tel_1">
+								<p>报名热线</p>
+								<p class="tel_2">18330392656</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>		
+	</div>
+	<div class="nav">
+		<div class="inner">
+			<ul>
+				<li ><a href="index.html" class="select">网站首页</a></li>
+				<li><a href="message.html">走进国运</a></li>
+				<li><a href="gonggao.html">新闻中心</a></li>
+				<li><a href="xueche.html">学车指南</a></li>
+				<li><a href="chexin.html">学车费用</a></li>
+				<li><a href="baoming.html">网上报名</a></li>
+				<li><a href="center.html">学员中心</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="lunbo">
+		<a href="#"><img src="img/lunbo1.jpg" id="img"></a>
+		<span id="left">&lt</span>
+		<span id="right">&gt</span>
+		<ul id="ul">
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+		</ul>
+	</div>
+	<script type="text/javascript">
+		var ohref=["baoming.html","register.html","baoming.html","公告3.html"];
+		var user=document.f1.user
+		user.onfocus=function(){
+			user.value=""
+		}
+		user.onblur=function(){
+			user.value="输入您所要搜寻的关键字"
+		}
+		var img=document.getElementById("img")
+		var index=1;		
+		var left=document.getElementById("left")
+		var right=document.getElementById("right")
+		var ul=document.getElementById("ul")
+		var li=ul.getElementsByTagName("li")
+		left.onclick=function(){
+			if(index==1){
+				index=4
+			}else{
+				index--
+			}
+			img.parentNode.setAttribute("href",ohref[index-1]);
+			img.src="img/lunbo"+index+".jpg"
+			for(var n=0;n<li.length;n++){
+				li[n].className=""
+			}li[index-1].className="select_1"
+		}
+		right.onclick=function(){
+
+			if(index==4){
+				index=1
+			}else{
+				index++
+			}
+			img.parentNode.setAttribute("href",ohref[index-1]);
+			img.src="img/lunbo"+index+".jpg";
+			for(var n=0;n<li.length;n++){
+				li[n].className=""
+			}
+			li[index-1].className="select_1"
+		}
+		index=1;
+		li[0].className="select_1"
+		for(var n=0;n<li.length;n++){
+			li[n].value=n
+			li[n].onmouseover=function(){
+				for(var i=0;i<li.length;i++){
+					li[i].className=""
+				}this.className="select_1"
+				index=this.value+1;
+				img.parentNode.setAttribute("href",ohref[index-1]);
+				img.src="img/lunbo"+index+".jpg"
+			}
+		}
+		function move(){
+			index=index%4+1;
+			img.parentNode.setAttribute("href",ohref[index-1]);
+			img.src="img/lunbo"+index+".jpg"
+			for(var n=0;n<li.length;n++){
+				li[n].className=""
+			}li[index-1].className="select_1"
+
+		}
+		var t=setInterval(move,2000);
+		var lunbo=document.getElementsByClassName("lunbo")[0];
+		lunbo.onmouseover=function(){
+			clearInterval(t)
+		}
+		lunbo.onmouseout=function(){
+			t=setInterval(move,2000)
+		}
+	</script>
+	<!-- 头部 -->
+	<div id="content">
+	<div class="content_title">
+		<h1>为什么<span>选择我们?</span></h1>
+		<p class="wow bounceInUp">随到随学！车接车送！单人单车单教练！自己驾校的考试场，3000元一次收费直到拿证！拒绝乱收费！拒绝送礼！45天拿证！不满意退费！通过率高！
+        </p>
+	</div>
+	<div id="content_container">
+		<div class="subnav1 wow flipInY">
+	   <img src="img/a1.jpg">
+       <h1>班型价格</h1>
+    <p class="subnav1p">我们可根据您的具体情况，从众多驾校课程 中帮您推荐和选择最适合您的学车方案和驾校课程。</p>
+      <a href="chexin.html">
+        <div class="btn1">
+        <p>点击详情</p>
+       </div>
+      </a>
+	   </div>
+	   <div class="subnav1 wow flipInY">
+	   <img src="img/a2.jpg">
+       <h1>班车服务</h1>
+    <p class="subnav1p">我们可根据您的具体情况，从众多驾校课程 中帮您推荐和选择最适合您的学车方案和驾校课程。</p>
+      <a href="chexin.html">
+        <div class="btn2">
+        <p>点击详情</p>
+       </div>
+      </a>
+	   </div>
+	   <div class="subnav1 wow flipInY">
+	   <img src="img/a3.jpg">
+       <h1>留言点评</h1>
+   <p class="subnav1p">我们可根据您的具体情况，从众多驾校课程 中帮您推荐和选择最适合您的学车方案和驾 校课程。</p>
+      <a href="liuyan.html">
+        <div class="btn3">
+        <p>点击详情</p>
+       </div>
+      </a>
+	   </div>
+        <div class="content_footer">
+        	<div class="footer_left">
+        	<p class="icon_1">GY</p>
+        	<img class="a5" src="img/a5.png">	
+        	<div class="footer_left1 wow fadeInLeft" data-wow-delay="0.6s">
+        		<img src="img/b1.jpg">
+        		<p class="p1">C1周一至周五速成班</p>
+        		<p class="p2">价格：4600元/优惠价：<span>3000</span>元</p>
+        		<p class="p3">练车时间：周一至周五</p>
+        		<p class="p4">训练车型：爱丽舍</p>
+        		<a href="baoming.html"><div class="btn">选择网点咨询、报名</div></a>
+        	</div>
+        	<div class="footer_left1 wow fadeInLeft" data-wow-delay="0.3s">
+        		<img src="img/b1.jpg">
+        		<p class="p1">C2周一至周五速成班</p>
+        		<p class="p2">价格：4600元/优惠价：<span>3000</span>元</p>
+        		<p class="p3">练车时间：周一至周五</p>
+        		<p class="p4">训练车型：爱丽舍</p>
+        		<a href="baoming.html"><div class="btn">选择网点咨询、报名</div></a>
+        	</div>
+        	<div class="footer_left1 wow fadeInLeft">
+        		<img src="img/b1.jpg">
+        		<p class="p1">B1周一至周五速成班</p>
+        		<p class="p2">价格：4600元/优惠价：<span>3000</span>元</p>
+        		<p class="p3">练车时间：周一至周五</p>
+        		<p class="p4">训练车型：爱丽舍</p>
+        		<a href="baoming.html"><div class="btn">选择网点咨询、报名</div></a>
+        	</div>
+        	<div class="footer_center">
+        	<p class="icon2">GY</p>
+        	<img class="a6" src="img/a6.png">	
+        	<p class="p6">国运驾校是经省交通局第一批验收合格的综合类一级驾校，现有资深教练员70余名，全新中、高档教练车70余辆，指定考试场2个，为秦皇岛各驾校提供各科考试场地！占地面积80余亩，是目前秦皇岛市现代化程度最高、设施最完备、 管理最先进、服务最到位的理想学车场所。公司以“学员至上，诚信至上”为培训原则， 以“诚信服务、收费公开、以人为本”为服务宗旨，以培训合格、优秀的驾驶员为目标， 以诚信服务为企业文化的准绳，以“优质带教、廉洁带教、安全带教”为经营理念，打造出了国运驾校的特色品牌。公司下设餐厅、服务热线等部门，为学员提供全方位、多层次、宽领域的配套服务。 基于对现代立体交通的全新认识，公司把驾培公司训练基地定位为：高标准、高起点、 前瞻性与现代化管理。为使驾驶员能适应未来城市道路的新要求，公司根据公安部、交通部和市交通委对机动车驾驶员培训基地设计施工方案的要求，在基地设置了具有标准 隔离带的训练道路、高标准的交叉道路和各种停车场地，使学员能在各种复杂的道路状 况下得到强化训练。 国运驾校全体员工热诚欢迎社会各界朋友来公司培训，公司将以优质的服务，严谨的学风，助您迅速成为一名优秀的驾驶员。</p>
+        	</div>
+        	<div class="footer_below">
+        	<p class="icon3">GY</p>
+        	<img class="a7" src="img/a7.png">	
+          <p class="footer_below_p">了解学车（规划好学车的时间选择适合自己的班型）<img src="img/a8.png"> 报名（准备好学车所需证件照片）<img src="img/a8.png">  体检<img src="img/a8.png">  交规考试（参加科目一学习，90分及格）<img src="img/a8.png">  桩考/内路（学五项考五项） <img src="img/a8.png"> 外路（目前练习16项，考试随机抽取同时会抽取考试人数的20%参加夜考。） <img src="img/a8.png"> 安全 （科目四的安全课程，参加4个半天的理论学习，恭喜您即将拥有驾照了。 科目四考试通过后） 宣誓<img src="img/a8.png"> 领驾照。安全文明驾驶，从我做起！</p>
+        	</div>
+          </div>
+          <div class="footer_right wow fadeInRight">
+         <div class="footer_right_top">
+          <a href="chexin.html">
+          <div>
+          <img src="img/icon1.png">
+          <p>课程费用</p>
+          </div>
+          </a>
+          <a href="message.html">
+            <div>
+          <img src="img/icon2.png">
+          <p>走进国运</p>
+          </div>
+          </a>
+          <a href="baoming.html">
+            <div>
+          <img src="img/icon3.png">
+          <p>在线报名</p>
+          </div>
+          </a>
+          <a href="center.html">
+             <div>
+          <img src="img/icon4.png">
+          <p>学员中心</p>
+          </div>
+          </a>
+         
+            </div>
+          <div class="footer_site">
+            <img src="img/abc.png">
+            <h3>各分部电话地址</h3>
+            <h5>海港区机动车考试场</h5>
+            <p>地址：燕大附近</p>
+            <p>报名热线：13333333333</p>
+            <p>王主任：15555555555</p>
+            <h5>抚宁机动车考试场</h5>
+            <p>地址：抚宁县</p>
+            <p>报名热线：1333333333</p>
+            <p>王主任：15555555555</p>
+          </div>   
+        	</div>
+        </div>
+	</div></div>
+	<!-- 尾部 -->
+<div class="background">
+	<div class="container">
+		<div class="search">
+			<span class="sel_btn"></span>
+			<select name="select" id="select">
+				<option value="1">班车路线查询</option>
+				<option value="2">公交路线查询</option>
+			</select>
+		</div>
+		<div class="place clearfix">
+			<div class="title">
+				<span>驾校环境</span>
+			</div>
+			<div class="roll clearfix">
+				<ul>
+					<li class="wow bounceInLeft">
+						<a href="#"><img src="img/cd1.jpg" alt=""><p>自带考场</p></a>
+						<div class="hidden">
+							<a href="#">考试场</a>
+							<p>阳光下的考场正门</p>
+						</div>
+					</li>
+					<li class="wow bounceInLeft">
+						<a href="#"><img src="img/1.jpg" alt=""><p>倒车入库</p></a>
+						<div class="hidden">
+							<a href="#">训练场</a>
+							<p>清晨学员在练车</p>
+						</div>
+					</li>
+					<li class="wow bounceInLeft">
+						<a href="#"><img src="img/2.jpg" alt=""><p>训练场</p></a>
+						<div class="hidden">
+							<a href="#">训练场</a>
+							<p>阳光下的训练场</p>
+						</div>
+					</li>
+					<li class="wow bounceInLeft">
+						<a href="#"><img src="img/3.jpg" alt=""><p>S弯道</p></a>
+						<div class="hidden">
+							<a href="#">S弯道练习</a>
+							<p>S弯道练习训练场</p>
+						</div>
+					</li>
+					<li class="wow bounceInLeft">
+						<a href="#"><img src="img/4.jpg" alt=""><p>坡起练习</p></a>
+						<div class="hidden">
+							<a href="#">科目二坡起</a>
+							<p>科目二坡起的训练场</p>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</div>
+	<div class="list">
+		<ul>
+			<li class="wow fadeInUpBig"><img src="img/xin.jpg"><h4>上门服务</h4><p>为您提供专业的上门办理学车手续</p></li>
+			<li  class="wow fadeInUpBig" data-wow-delay="0.3s"><img src="img/zp.jpg"><h4>无忧学车</h4><p>我们为您提供专业的呼叫中心服务</p></li>
+			<li class="wow fadeInUpBig" data-wow-delay="0.6s"><img src="img/zx.jpg"><h4>咨询服务</h4><p>我们为您提供详尽的驾校报名咨询</p></li>
+		</ul>
+	</div>
+	
+	<footer>
+		<div class="contact">
+			<ul class="clearfix mess">
+				<li>
+					<h3>用户须知</h3>
+					<ul>
+						<li><a href="#">关于国运</a></li>
+						<li><a href="#">我要约考</a></li>
+						<li><a href="#">班型介绍</a></li>
+					</ul>
+				</li>
+				<li>
+					<h3>联系方式</h3>
+					<p>报名电话：86-18633505059</p>
+					<p>报名地址：秦皇岛市海港区 抚宁区 北戴河区 (以上三区均有练车场，根据学员个人情况而分配；燕大附近有为学生专门安排的练车场)</p>
+				</li>
+				<li><h3>关注我们</h3><img src="img/weixin.jpg" alt=""></li>
+			</ul>
+
+		</div>
+		<p>Copy Right©河北国运机动车驾驶员培训有限公司 All Rights Reserve 冀ICP备14002527号</p>
+	</footer>
+	<!-- 联系客服 -->
+	<div class="sider">
+		<a class="r_qq btn" href="tencent://Message/?Uin=1757836635&amp;Menu=yes"></a>
+		<div class="r_phone btn"><span class="p_number">86-18633505059</span></div>
+		<a class="btn_top btn"></a>	
+	</div>
+
+	<script src="js/jquery-1.12.3.min.js"></script>
+	<script src="js/wow.min.js"></script>
+	<script>
+	new WOW().init();
+		$(function(){
+			// 显示隐藏
+			$(window).scroll(function(){
+				if($(window).scrollTop()>$(window).height()){
+					$(".btn_top").fadeIn();
+				}else{
+					$(".btn_top").hide();
+				}
+			});
+			$(window).trigger("scroll");
+			//toTop
+			$('.btn_top').click(function(){
+				$("html,body").animate({scrollTop:0},1000);
+			});
+		})
+	</script>
+</body>
+</html>

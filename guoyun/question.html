@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>驾校信息</title>
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/layout.css">
+	<style type="text/css">
+		.container{
+	width: 1200px;
+	margin: 0 auto;
+	font-family: "微软雅黑";
+}
+.left_area{
+	width: 220px;
+	float: left;
+}
+.left_area .title{
+	height: 37px;
+    line-height: 37px;
+    padding-left: 20px;
+    /*border-top: 2px solid #ccc;*/
+    font-size: 16px;
+    color: #000;
+    background: url(img/list.png) 10px center no-repeat;
+}
+.left_list{
+	font-family: "Consolas";
+}
+.left_area .left_list li{
+	border-top: 1px solid #eeeeee;
+}
+.left_list li a{
+    display: block;
+    width: 201px;
+    height: 32px;
+    line-height: 32px;
+    padding-left: 19px;
+    font-size: 14px;
+    color: #7c7c7c;
+}
+.left_list li.active a{
+	background: #c01619;
+	color: #fff;
+}
+.left_list li a:hover{
+	background: #c01619;
+	color: #fff;
+}
+.s_center{
+	padding-top: 20px;
+}
+.s_center li a{
+    display: block;
+    height: 53px;
+    padding: 17px 0 0 90px;
+    font-size: 14px;
+    color: #fff;
+}
+.s_center li p{
+	font-size: 10px;
+	line-height: 16px;
+}
+.s_center li{
+	margin-bottom: 15px;
+}
+.s_center li:first-child{
+	background: url(img/li_bg3.jpg);
+}
+.s_center li:last-child{
+	background: url(img/li_bg4.jpg);
+}
+.left_area .p_number{
+	background: url(img/phone.jpg) left center no-repeat;
+	padding: 0 0 10px 52px;
+	height: 50px;	
+}
+.right{
+	width: 960px;
+	float: right;
+}
+.right .title{
+	border-bottom: 2px solid #ccc;
+	line-height: 50px;
+}
+.right .title h2{
+	font-size: 16px;
+	float: left;
+}
+.right .title span{
+	float: right;
+}
+.span_1{
+	color: #9a9a9a;
+}
+.span_2{
+
+}
+p{
+	margin-bottom: 20px;
+}
+	</style>
+</head>
+<body>
+	<div id="top">		
+			<div class="w_1000">
+				<div class="inner">
+					<div class="block_01">
+					<div class="login">
+						
+						<a href="login.html">会员登陆</a>
+						<img src="img/li_bg1.png">
+						<a href="register.html">会员注册</a>
+						<img src="img/li_bg1.png">
+					</div>
+				</div>
+				</div>
+			</div>
+			<div class="banner">
+				<div class="inner">
+					<div class="logo">
+						<a href="index.html">
+							<img src="img/logo1.png">
+						</a>
+					</div>
+					<div class="s_t">
+						<div class="search">
+							<form action="" method="" name="f1">
+								<input type="submit" value class="input_1">
+								<input type="text" placeholder="输入您所要搜寻的关键字" class="input_2" name="user">
+								<input type="submit" value="搜&nbsp索" class="input_3">
+							</form>
+						</div>
+						<div class="tel">
+							<div class="tel_1">
+								<p>报名热线</p>
+								<p class="tel_2">18330392656</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>		
+	</div>
+	<div class="nav">
+		<div class="inner">
+			<ul>
+				<li ><a href="index.html">网站首页</a></li>
+				<li><a href="message.html">走进国运</a></li>
+				<li><a href="gonggao.html">新闻中心</a></li>
+				<li><a href="xueche.html" class="select">学车指南</a></li>
+				<li><a href="chexin.html">学车费用</a></li>
+				<li><a href="baoming.html">网上报名</a></li>
+				<li><a href="center.html">学员中心</a></li>
+			</ul>
+		</div>
+	</div>
+	<!-- 头部 -->
+	
+	<div class="container clearfix">
+		<div class="left_area">
+			<div class="title">学车指南</div>
+			<ul class="left_list">
+				<li><a href="xueche.html">&gt; 报名须知</a></li>
+				<li><a href="shipin.html">&gt; 驾驶技巧</a></li>
+				
+				<li class="active"><a href="question.html">&gt; 常见问题</a></li>
+			</ul>
+			<ul class="s_center">
+				<li><a href="center.html">
+					学员中心<p>STUDENT CENTER</p>
+				</a></li>
+				<li><a href="baoming.html">
+					报名中心
+						<p>REGISTRATION CENTER</p>
+					</a></li>
+			</ul>
+			<div class="p_number">
+				<h4>报名热线</h4>
+				<p>010-34893849</p>
+			</div>
+		</div>
+		<div class="right">
+			<div class="title clearfix">
+				<h2>常见问题</h2>
+				<span>当前位置：首页>>常见问题</span>
+			</div>
+			<div class="actitcle">
+				<p>
+					<span class="span_1">1、问题：驾照扣满12分 一定要重回驾校学习吗？</span>
+					<br>					
+					<pre><span class="span_2">   回答：扣了12分，只需要进行理论学习，合格后，就可以重新拿到驾照（又拿到12分）</span></pre>
+				</p>
+				<hr>
+				<p>
+					<span class="span_1">2、问题：学考C牌有身高限制吗？</span>
+					<br>					
+					<pre><span class="span_2">   回答：C 牌按照国家政策，没有身高限制。</span></pre>
+				</p>
+				<hr>
+				<p>
+					<span class="span_1">3、问题：驾驶证在什么条件下必须换领？</span>
+					<br>					
+					<pre><span class="span_2">   回答：如果在户口所在地需申领A、B类驾驶证，而本人的低准驾驾驶证是外地的，就必须在户口所在地换领了低准驾驾驶证才可以申请增加A、B类准驾车型驾驶证。</span></pre>
+				</p>
+				<hr>
+				<p>
+					<span class="span_1">4、问题：驾照过期怎么办？</span>
+					<br>				
+					<pre><span class="span_2">   回答：驾驶证有效期满换证：机动车驾驶人应当于机动车驾驶证有效期满前九十日内，向机动车驾驶证核发地车辆管理所申请换证;超过机动车驾驶证有效期一年以上未换证的，注销机动车驾驶证。</span></pre>
+				</p>
+				<hr>
+				<p>
+					<span class="span_1">5、问题：参加理论考试需要准备什么资料？</span>
+					<br>					
+					<pre><span class="span_2">   回答：请带上本人有效身份证原件即可。注意：身份证一定要在有效期内，如身份证丢失或者过期，需带上公安机关出具的临时有效身份证；如果是非深户还需要带上居住证原件。</span></pre>
+				</p>
+				<hr>
+				<p>
+					<span class="span_1">6、问题：现在科目二考哪些内容？</span>
+					<br>					
+					<pre><span class="span_2">   回答：1、将目前分开预约考试的桩和九选三合并成为科目二，一次性完成预约和考试；
+         2、科目二考试内容为：倒车入库、坡道定点停车和起步、侧方停车、曲线行驶、直角转弯五个必考项目；
+         3、80分为合格</span></pre>
+				</p>
+				<hr>
+				<p>
+					<span class="span_1">7、问题：报名的学费里面包含到韶关长训的费用吗？</span>
+					<br>				
+					<pre><span class="span_2">   回答：我驾校学费包含长训到韶关目的地的吃和住的费用，只有往返路途的中餐是由同去的4名学员AA自理的；</span></pre>
+				</p>
+				<hr>
+				<p>
+					<span class="span_1">8、问题：学车科目二五选五是哪些内容？</span>
+					<br>					
+					<pre><span class="span_2">   回答：1：倒车入库
+	 2：坡道定点停车和起步
+	 3：侧方位停车
+	 4：曲线行驶
+	 5：直角转弯</span></pre>
+				</p>
+				<hr>
+				<p>
+					<span class="span_1">9、问题：考驾照每个科目的补考费是多少啊？</span>
+					<br>					
+					<pre><span class="span_2">   回答：科目一的补考费是35元，
+     	 科目二的补考费是65元，
+     	 科目三的补考费是140元，
+     	 科目四的补考费45元；</span></pre>
+				</p>
+				<hr>
+				<p>
+					<span class="span_1">10、问题：报名学车需要具备哪些条件？</span>
+					<br>				
+					<pre><span class="span_2">   回答：1、18-60周岁； 
+	 2、视力：两眼视力不低于标准视力表0.7或对数视力表4.9（允许矫正）；  
+	 3、辨色力：无红绿色盲；
+	 4、听力：两耳分别距音叉50厘米能辨别声源方向； 
+	 5、上肢：双手拇指健全，每只手其他手指必须有三指健全，肢体和手指运动功能正常； 
+	 6、下肢：运动功能正常。申请驾驶手动档汽车，下肢不等长度不得大于5厘米。 
+	 7、躯干、颈部：无运动功能障碍。 
+	 8、已过处罚时间（吊销驾驶证时间）； 
+	 9、之前未在其他地方受理过；  
+	 10、如在异地申领过机动车驾驶证，且在有效期内，请先办理转入深圳，再增驾；如已失效， 
+	 11、属下列情况之一的，不能申请
+	     1）有器质性心脏病、癫痫病、美尼乐氏症、眩晕症、癔病、震颤麻痹、精神病、痴呆以及影响肢体活动的神经系统疾病等妨碍安全驾驶疾病的； 
+	     2）  吸食、注射毒品、长期服用依赖性精神药品成瘾尚未戒除 
+	     3）  被吊销机动车驾驶证未满两年的；
+	     4）  造成交通事故后逃逸被吊销机动车驾驶证的； 
+	     5）  驾驶许可依法被撤销未满三年的；
+	     6）  法律、行政法规规定其他情形的。</span></pre>
+				</p>
+			</div>
+		</div>
+	</div>	
+	<footer>
+		<div class="contact">
+			<ul class="clearfix mess">
+				<li>
+					<h3>用户须知</h3>
+					<ul>
+						<li><a href="#">关于国运</a></li>
+						<li><a href="#">我要约考</a></li>
+						<li><a href="#">班型介绍</a></li>
+					</ul>
+				</li>
+				<li>
+					<h3>联系方式</h3>
+					<p>报名电话：86-18633505059</p>
+					<p>报名地址：秦皇岛市海港区 抚宁区 北戴河区 (以上三区均有练车场，根据学员个人情况而分配；燕大附近有为学生专门安排的练车场)</p>
+				</li>
+				<li><h3>关注我们</h3><img src="img/weixin.jpg" alt=""></li>
+			</ul>
+
+		</div>
+		<p>Copy Right©河北国运机动车驾驶员培训有限公司 All Rights Reserve 冀ICP备14002527号</p>
+	</footer>
+</body>
+</html>

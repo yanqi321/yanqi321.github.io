@@ -1,0 +1,35 @@
+body{
+	font-family: '微软雅黑', sans-serif;
+}
+.progress {
+    margin-bottom: 15px;
+}
+.wh64{
+	width: 64px;
+	height: 64px;
+	border-radius: 50%;
+}
+textarea{
+	resize:none;
+	margin-bottom: 15px;
+}
+.user-search{
+	padding: 10px;
+	border: 1px solid #ddd;
+	border-top: none;
+}
+.taglist{
+    padding-top: 15px;
+}
+.taglist .alert{
+    margin: 0 15px 15px 0;
+}
+/*footer*/
+footer{
+	text-align: center;
+	padding: 20px;
+	font-weight: 400;
+}
+.pad0{
+	padding: 0;
+}
